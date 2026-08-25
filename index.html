@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -24,6 +25,11 @@
         <li><a href="#blog">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
@@ -36,10 +42,9 @@
     </div>
   </section>
 
-  <div class="container">
-
   <!-- About/Hello Section: photo left, text right -->
   <section id="about" class="about">
+    <div class="container">
     <div class="about-img">
       <img src="assets/profile.jpg" alt="Alex Smith photo">
     </div>
@@ -65,41 +70,45 @@
         <a href="#contact" class="btn btn-filled">Hire Me</a>
       </div>
     </div>
+    </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="services">
+    <div class="container">
     <h2 class="section-title">Our Services</h2>
 
     <div class="services-grid">
       <div class="service-card">
-        <img src="img/icons/uiux.svg" alt="UI/UX Design icon" class="service-icon">
+        <i class="fas fa-pencil-ruler service-icon"></i>
         <h3>UI/UX Design</h3>
-        <p>Short description of this service goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
       </div>
 
       <div class="service-card">
-        <img src="img/icons/app-dev.svg" alt="App Development icon" class="service-icon">
+        <i class="fas fa-code service-icon"></i>
         <h3>App Development</h3>
-        <p>Short description of this service goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
       </div>
 
       <div class="service-card">
-        <img src="img/icons/product-design.svg" alt="Product Design icon" class="service-icon">
+        <i class="fas fa-object-group service-icon"></i>
         <h3>Product Design</h3>
-        <p>Short description of this service goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
       </div>
 
       <div class="service-card">
-        <img src="img/icons/settings.svg" alt="Settings icon" class="service-icon">
+        <i class="fas fa-cogs service-icon"></i>
         <h3>UI/UX Design</h3>
-        <p>Short description of this service goes here.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
       </div>
+    </div>
     </div>
   </section>
 
   <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio">
+    <div class="container">
     <h2 class="section-title">Our Portfolio</h2>
 
     <ul class="portfolio-filters">
@@ -110,32 +119,32 @@
     </ul>
 
     <div class="portfolio-grid">
-      <a href="#" class="portfolio-item"><img src="img/portfolio/1.jpg" alt="Portfolio item 1"></a>
-      <a href="#" class="portfolio-item"><img src="img/portfolio/2.jpg" alt="Portfolio item 2"></a>
-      <a href="#" class="portfolio-item"><img src="img/portfolio/3.jpg" alt="Portfolio item 3"></a>
-      <a href="#" class="portfolio-item"><img src="img/portfolio/4.jpg" alt="Portfolio item 4"></a>
-      <a href="#" class="portfolio-item"><img src="img/portfolio/5.jpg" alt="Portfolio item 5"></a>
-      <a href="#" class="portfolio-item"><img src="img/portfolio/6.jpg" alt="Portfolio item 6"></a>
+      <img src="assets/1.jpg" alt="Portfolio item 1">
+      <img src="assets/2.jpg" alt="Portfolio item 2">
+      <img src="assets/3.jpg" alt="Portfolio item 3">
+      <img src="assets/4.jpg" alt="Portfolio item 4">
+      <img src="assets/5.jpg" alt="Portfolio item 5">
+      <img src="assets/6.jpg" alt="Portfolio item 6">
     </div>
-
-    <div class="stats-grid">
+    </div>
+    <div class="stats-row">
       <div class="stat">
-        <img src="img/icons/team.svg" alt="Team icon" class="stat-icon">
+        <i class="fas fa-users"></i>
         <h3>200</h3>
         <p>Team Members</p>
       </div>
       <div class="stat">
-        <img src="img/icons/team.svg" alt="Projects icon" class="stat-icon">
+        <i class="fas fa-users"></i>
         <h3>345</h3>
         <p>Complete Projects</p>
       </div>
       <div class="stat">
-        <img src="img/icons/download.svg" alt="Downloads icon" class="stat-icon">
+        <i class="fas fa-cloud-download-alt"></i>
         <h3>1200</h3>
         <p>Files Downloaded</p>
       </div>
       <div class="stat">
-        <img src="img/icons/code.svg" alt="Code icon" class="stat-icon">
+        <i class="fas fa-coffee"></i>
         <h3>1800</h3>
         <p>Lines Of Code</p>
       </div>
@@ -144,63 +153,69 @@
 
   <!-- Testimonial Section -->
   <section id="testimonial" class="testimonial">
+    <div class="container">
     <h2 class="section-title">Client's Feedback</h2>
 
-    <div class="testimonial-slider">
       <div class="testimonial-card">
+
         <div class="testimonial-photo">
-          <img src="img/testimonial/client-placeholder.jpg" alt="Client photo">
+          <img src="assets/client img.jpg" alt="Client photo">
         </div>
         <div class="testimonial-content">
           <h3>Alex Ander</h3>
-          <p class="location">United States</p>
-          <p class="quote">Short client quote goes here — replace with real feedback.</p>
+          <p class="location">📍 United States</p>
+          <p class="quote">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, aspernatur temporibus mollitia facilis aliquam quae.</p>
           <div class="rating">★★★★☆</div>
         </div>
-      </div>
 
-      <div class="slider-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
       </div>
     </div>
   </section>
 
   <!-- Blog Section -->
   <section id="blog" class="blog">
+    <div class="container">
     <h2 class="section-title">Our Blog</h2>
 
     <div class="blog-grid">
       <article class="blog-card">
-        <img src="img/blog/1.jpg" alt="Web Design Blog Post cover">
-        <p class="blog-date">23 November, 2015</p>
-        <h3><a href="#">Web Design Blog Post</a></h3>
-        <p>Short excerpt goes here.</p>
-        <a href="#" class="read-more">Read More →</a>
+        <img src="assets/blog img 1.jpg" alt="Web Design Blog Post cover">
+        <div class="blog-text">
+          <p class="blog-date">23 November, 2015</p>
+          <h3>Web Design Blog Post</h3>
+          <p>Short excerpt goes here.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
       </article>
 
       <article class="blog-card">
         <div class="blog-video">
           <iframe src="https://www.youtube.com/embed/uVju5--RqtY" title="Development Blog Post video" allowfullscreen></iframe>
         </div>
-        <p class="blog-date">20 April, 2018</p>
-        <h3><a href="#">Development Blog Post</a></h3>
-        <p>Short excerpt goes here.</p>
-        <a href="#" class="read-more">Read More →</a>
+        <div class="blog-text">
+          <p class="blog-date">20 April, 2018</p>
+          <h3>Development Blog Post</h3>
+          <p>Short excerpt goes here.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
       </article>
 
       <article class="blog-card">
-        <img src="img/blog/3.jpg" alt="Full Width Blog Post cover">
-        <p class="blog-date">17 May, 2017</p>
-        <h3><a href="#">Full Width Blog Post</a></h3>
-        <p>Short excerpt goes here.</p>
-        <a href="#" class="read-more">Read More →</a>
+        <img src="assets/blog img 2.jpg" alt="Full Width Blog Post cover">
+        <div class="blog-text">
+          <p class="blog-date">17 May, 2017</p>
+          <h3>Full Width Blog Post</h3>
+          <p>Short excerpt goes here.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
       </article>
+    </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
+    <div class="container">
     <h2 class="section-title">Contact Us</h2>
 
     <div class="contact-form">
@@ -211,20 +226,20 @@
       <textarea name="message" placeholder="Message for me"></textarea>
       <button type="button" class="btn btn-filled">Send Message</button>
     </div>
+    </div>
   </section>
-
-  </div> <!-- /.container -->
 
   <!-- Footer -->
   <footer class="footer">
     <ul class="social-icons">
-      <li><a href="#" aria-label="Facebook"><img src="img/icons/facebook.svg" alt="Facebook icon"></a></li>
-      <li><a href="#" aria-label="Twitter"><img src="img/icons/twitter.svg" alt="Twitter icon"></a></li>
-      <li><a href="#" aria-label="Google"><img src="img/icons/google.svg" alt="Google icon"></a></li>
-      <li><a href="#" aria-label="GitHub"><img src="img/icons/github.svg" alt="GitHub icon"></a></li>
+      <li><i class="fab fa-facebook-f footer-icons"></i></li>
+      <li><i class="fab fa-twitter footer-icons"></i></li>
+      <li><i class="fab fa-google footer-icons"></i></li>
+      <li><i class="fab fa-github footer-icons"></i></li>
     </ul>
-    <p>Copy Right 2026 © By <a href="#">Theme-fair</a> All Rights Reserved</p>
+    <p class="copy-right">Copy Right 2026 © By <a href="#">Theme-fair</a> All Rights Reserved</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
