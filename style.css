@@ -4,6 +4,10 @@
     box-sizing: border-box
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --primary-pink: #FF305B;
     --primary-gray: #f1f1f1;
