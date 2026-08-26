@@ -570,5 +570,6 @@ a{
     .hero-overlay .name { font-size: 2rem; }
     .services-grid { grid-template-columns: 1fr; }
     .portfolio-grid { grid-template-columns: 1fr; }
+    .blog-grid { gap: 1.5rem; }
     .stats-row { flex-direction: column; }
 }
