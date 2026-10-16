@@ -508,10 +508,11 @@ a{
     margin: 0 0 16px;
 }
 
-.social-icons img {
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1);
+.social-icons > li > a > i{
+    color: var(--primary-gray);
+}
+.social-icons > li > a > i:hover{
+    color: var(--primary-pink);
 }
 
 .footer .copy-right {
