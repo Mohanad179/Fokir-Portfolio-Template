@@ -508,10 +508,13 @@ a{
     margin: 0 0 16px;
 }
 
-.social-icons > li > a > i{
+.social-icons > li > a,
+.social-icons > li > a:visited {
     color: var(--primary-gray);
+    text-decoration: none;
 }
-.social-icons > li > a > i:hover{
+
+.social-icons > li > a:hover {
     color: var(--primary-pink);
 }
 
